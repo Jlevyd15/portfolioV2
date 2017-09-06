@@ -1,0 +1,152 @@
+.App {
+  margin: auto;
+  width: 80%;
+}
+
+.App-logo {
+  text-align: left;
+  /*animation: App-logo-spin infinite 20s linear;*/
+  height: 80px;
+  padding-top: 20px;
+}
+
+.App-header {
+  padding: 20px;
+  color: white;
+  /*font-family: 'Teko', sans-serif;*/
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 4.5rem;
+  height: 100vh;
+}
+
+.App-section {
+  padding: 20px;
+  /*height: 300px;*/
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 100px;
+  line-height: 1.5;
+  transition:all .6s ease;
+  opacity: 0;
+}
+
+.App-section:hover {
+  color: grey;
+}
+
+.App-section > ul > li:hover {
+  transition:all .6s ease;
+  color: white;
+}
+
+ul > li {
+  white-space: nowrap;
+}
+
+.App-section > ul > li:hover a{
+  color: #CC9D1E;
+}
+
+.App-section:hover span.highlight{
+  /*opacity: .1;*/
+  color: #CC9D1E;
+}
+
+.App-section:hover a.link-highlight{
+  /*opacity: .1;*/
+  color: #CC9D1E;
+}
+
+.App-section-bar {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  height: 20px;
+  width:50px;
+  background-color: #CC9D1E;
+  border-radius: 2px;
+}
+
+.highlight {
+  transition:all .6s ease;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  .App-section {
+    width: 80%;
+    height: 100%;
+  }
+
+  ul > li {
+    white-space: normal;
+  }
+}
+
+.App-section-last {
+  height: 100%;
+}
+
+.scrolled-over {
+  transition:all .3s ease;
+  opacity: 1;
+  /*animation: App-logo-spin 1 .2s linear;*/
+}
+
+.footer-flex {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.footer-flex > img {
+  padding: 0px;
+}
+
+.footer-flex > div {
+  align-self: center;
+  padding-left: 20px;
+}
+
+.created-by {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+@keyframes App-logo-spin {
+  from {
+    opacity: 0;
+    transform: translate(-2000px);
+  }
+  to { 
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+.arrow-down {
+  transform: rotate(90deg);
+  font-size: 4.0rem;
+  animation: arrow-down-fade infinite 3s linear;
+  position: relative;
+  bottom: 0px;
+
+}
+
+@keyframes arrow-down-fade {
+  from {
+    opacity: 0;
+  }
+  to { 
+    opacity: 1;
+  }
+}
