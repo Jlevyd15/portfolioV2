@@ -45,7 +45,11 @@
 }
 
 ul > li {
-  white-space: nowrap;
+  /* white-space: nowrap; */
+}
+
+.App-section > ul > li > a {
+    text-decoration: underline;
 }
 
 .App-section > ul > li:hover a{
@@ -55,6 +59,10 @@ ul > li {
 .App-section:hover span.highlight{
   /*opacity: .1;*/
   color: #CC9D1E;
+}
+
+.App-section a.link-highlight {
+  text-decoration: underline;
 }
 
 .App-section:hover a.link-highlight{
@@ -78,12 +86,24 @@ ul > li {
 
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 480px)
+  and (max-device-width: 760px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
   .App-section {
     width: 80%;
     height: 100%;
+  }
+
+  .App-section a.link-highlight{
+    color: #CC9D1E;
+  }
+
+  .App-section > ul > li > a {
+    color: #CC9D1E;
+  }
+
+  .App-section span.highlight{
+    color: #CC9D1E;
   }
 
   ul > li {
